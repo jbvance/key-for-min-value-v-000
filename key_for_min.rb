@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   return nil if !name_hash.any?
-  min_val = 10000
+  min_val = nil
   ret_key = nil
   name_hash.collect do |key, value|
     if value < min_val
